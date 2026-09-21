@@ -16,13 +16,13 @@
 
 # Debugger Files
 *.pdb
+*.dwo
 
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
 *.so.*
-
 
 # Fortran module files
 *.mod
@@ -39,31 +39,48 @@
 *.out
 *.app
 
-# Build directories
+# Build and Output directories
 build/
 Build/
 build-*/
+bin/
+bin-*/
 
 # CMake generated files
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
 install_manifest.txt
 compile_commands.json
 
-# Temporary files
+# Temporary & Editor files
 *.tmp
 *.log
 *.bak
 *.swp
+*~
 
 # vcpkg
 vcpkg_installed/
 
-# debug information files
-*.dwo
-
-# test output & cache
+# Test output & Cache
 Testing/
 .cache/
+
+# OS-specific garbage files
+.DS_Store
+.directory
+Thumbs.db
+
+# Ignore all .dat files inside any subdirectory of OutPutData
+#/OutPutData/**/*.dat
+
+# Shell & Batch scripts (if not meant to be tracked)
+#*.sh
+
+# Explicitly keep Makefile
+!Makefile
+!makefile
+
+# Ignore all cache files
+/.build_cache
